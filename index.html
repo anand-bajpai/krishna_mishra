@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna Mishra — Portfolio</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071021 0%, #071424 60%);color:#e6eef6;line-height:1.4}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    
+    /* Navbar */
+    nav{background:rgba(15,23,42,0.95);backdrop-filter:blur(6px);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .nav-container{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .nav-logo{font-weight:700;font-size:18px;color:var(--accent)}
+    .nav-links{display:flex;gap:18px}
+    .nav-links a{color:#e6eef6;text-decoration:none;font-size:15px;font-weight:500}
+    .nav-links a:hover{color:var(--accent)}
+
+    header{display:flex;gap:20px;align-items:center;margin-top:20px}
+    .avatar{flex:0 0 120px;height:120px;border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,0.5); }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .top-actions{margin-left:auto;display:flex;gap:10px}
+    a.btn{background:var(--accent);color:#022; padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .small-card{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    h2{font-size:18px;margin:0 0 8px 0}
+    ul{padding-left:16px;margin:8px 0}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;font-size:13px}
+    .exp{margin-bottom:12px}
+    .meta{color:var(--muted);font-size:13px}
+    .contact-row{display:flex;gap:10px;align-items:center;margin:6px 0}
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:22px}
+    a.link{color:inherit;text-decoration:underline}
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .top-actions{margin-left:0}
+      .nav-links{flex-wrap:wrap;gap:10px}
+    }
+    /* print-friendly */
+    @media print{body{background:white;color:black} .container{box-shadow:none} a.btn,nav{display:none}}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">Krishna Mishra</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="krishna Mishra.jpg" alt="Krishna Mishra" />
+      </div>
+      <div>
+        <h1>Krishna Mishra</h1>
+        <p class="lead">B.Tech — Electrical &amp; Electronics | Workshop Incharge &amp; Field Service | Sitapur, Uttar Pradesh</p>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="https://www.linkedin.com/in/krishna-mishra9219" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="top-actions" aria-hidden="true"></div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p class="meta">Name: <strong>Krishna Mishra</strong> — Father's name: <strong>Mrs. Dinesh Kumar Mishra</strong></p>
+          <p>I am an electrical engineering graduate with hands-on experience in workshop management, field service activities and maintenance work. I enjoy solving practical problems, leading small teams, and delivering reliable electrical solutions.</p>
+
+          <h2 id="experience" style="margin-top:16px">Experience</h2>
+          <div class="exp small-card">
+            <strong>Toyota Kirloskar Motors, Lakhimpur</strong>
+            <div class="meta">Role: FSA (Field Service/Field Support)</div>
+          </div>
+          <div class="exp small-card">
+            <strong>Eicher Tractor, Sitapur</strong>
+            <div class="meta">Role: Workshop Incharge</div>
+          </div>
+          <div class="exp small-card">
+            <strong>Rudra System, Lucknow</strong>
+            <div class="meta">Role: Technician / Support</div>
+          </div>
+
+          <h2 id="projects" style="margin-top:16px">Projects</h2>
+          <div class="small-card">
+            <ul>
+              <li><strong>Cell Phone Signal Jammer (Minor)</strong> — Built a proof-of-concept jammer for controlled lab experiments (academic project).</li>
+              <li style="margin-top:6px"><strong>HT Line Protection (Major)</strong> — Major project on high-tension line protection systems, relay logic and safety measures.</li>
+            </ul>
+          </div>
+
+          <h2 style="margin-top:16px">Industrial Training</h2>
+          <div class="small-card">
+            <strong>Electrical Power House, Sitapur</strong>
+            <div class="meta">Focus: Distribution lines, substation basics and on-site maintenance.</div>
+          </div>
+
+          <h2 style="margin-top:16px">Awards &amp; Achievements</h2>
+          <div class="small-card">
+            <ul>
+              <li>All India English Writing Event 2018 — Organised by Shri Ram Chandra Mission &amp; UN Information Center.</li>
+              <li>Department Topper, Team Leader, Project Director in B.Tech.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education" class="card" style="margin-top:16px">
+          <h2>Education</h2>
+          <div class="small-card">
+            <strong>B.Tech — Electrical &amp; Electronics Engineering</strong>
+            <div class="meta">Graduation</div>
+            <div style="margin-top:8px"><strong>12th</strong> — UP Board, Government Inter College Sitapur</div>
+            <div><strong>10th</strong> — UP Board, SVM Inter College Sitapur</div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h2>Contact</h2>
+          <div class="contact-row"><strong>Email:</strong> <a class="link" href="mailto:092krishnamishra@gmail.com">092krishnamishra@gmail.com</a></div>
+          <div class="contact-row"><strong>Phone:</strong> <a class="link" href="tel:+919219153591">+91 9219153591</a></div>
+          <div class="contact-row"><strong>Location:</strong> Distt. Sitapur, Uttar Pradesh — 261001</div>
+          <div class="contact-row"><strong>Languages:</strong> Hindi, English</div>
+          <div class="contact-row"><strong>Gender:</strong> Male</div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill">Electrical Engineering</div>
+            <div class="skill">System Management</div>
+            <div class="skill">Repair &amp; Maintenance</div>
+            <div class="skill">Machine Operation</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a class="link" href="https://www.linkedin.com/in/krishna-mishra9219" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer id="contact">Made with ❤️ — Krishna Mishra • <a class="link" href="mailto:092krishnamishra@gmail.com">Email</a> • <a class="link" href="https://www.linkedin.com/in/krishna-mishra9219" target="_blank">LinkedIn</a></footer>
+  </div>
+</body>
+</html>
